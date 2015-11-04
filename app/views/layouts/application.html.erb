@@ -48,8 +48,9 @@
         <a class="navbar-brand" href="<%= static_pages_home_path %>">Saint Paul</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Life Summary", static_pages_about_path  %></li>
-            <li><%= link_to "Facts", static_pages_facts_path  %></li>
+            <li><%= link_to "Life Summary", static_pages_life_path  %></li>
+            <li><%= link_to "Canonization", static_pages_canonization_path  %></li>
+            <li><%= link_to "About Me", static_pages_about_path  %></li>
             <li><%= link_to "Blog", static_pages_blog_path  %></li>
           </ul>
         </div>
@@ -63,9 +64,11 @@
           <%= yield %>
         </div>
       </div><!--/row-->
-
+      <hr/>
       <footer>
-        <p>&copy; Johnny Dean 2015</p>
+        <center>
+          <p>&copy; Johnny Dean 2015</p>
+        </center>
       </footer>
 
     </div> <!-- /container -->
